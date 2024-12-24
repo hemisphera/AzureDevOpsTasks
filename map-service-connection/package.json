@@ -1,6 +1,6 @@
 {
     "name": "map-service-connection",
-    "version": "1.0.13",
+    "version": "1.0.15",
     "main": "index.js",
     "dependencies": {
         "@types/node": "10.17.0",

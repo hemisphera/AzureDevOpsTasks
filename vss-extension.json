@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
-    "id": "map-service-connection",
-    "name": "Map Service Connection",
+    "id": "hsp-azure-devops-tasks",
+    "name": "Azure DevOps Tasks",
     "publisher": "Hemisphera",
     "version": "1.0.15",
     "targets": [
