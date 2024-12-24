@@ -2,8 +2,8 @@
     "manifestVersion": 1,
     "id": "hsp-azure-devops-tasks",
     "name": "Azure DevOps Tasks",
-    "publisher": "Hemisphera",
-    "version": "1.0.15",
+    "publisher": "hemisphera",
+    "version": "1.0.16",
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
@@ -13,6 +13,7 @@
     "categories": [
         "Azure Pipelines"
     ],
+    "public": true,
     "files": [
         {
             "path": "map-service-connection"
