@@ -1,0 +1,33 @@
+{
+    "manifestVersion": 1,
+    "id": "map-service-connection",
+    "name": "Map Service Connection",
+    "publisher": "Hemisphera",
+    "version": "1.0.15",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "description": "Tasks for Azure DevOps.",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "files": [
+        {
+            "path": "map-service-connection"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "map-service-connection",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "map-service-connection"
+            }
+        }
+    ]
+}

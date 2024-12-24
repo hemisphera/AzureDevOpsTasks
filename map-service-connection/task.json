@@ -1,0 +1,37 @@
+{
+    "id": "492d004f-aec3-4441-82f5-cd056c4d1e80",
+    "name": "map-service-connection",
+    "friendlyName": "Map Service Connection",
+    "description": "Maps a generic service connection to environment variables.",
+    "helpMarkDown": "Maps a generic service connection to environment variables.",
+    "category": "Utility",
+    "author": "Hemisphera",
+    "version": {
+        "Major": 1,
+        "Minor": 0,
+        "Patch": 13
+    },
+    "inputs": [
+        {
+            "name": "serviceConnection",
+            "type": "connectedService:Generic",
+            "label": "Service Connection",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "Provide the service connection to be mapped."
+        },
+        {
+            "name": "prefix",
+            "type": "string",
+            "label": "Prefix",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "The prefix for the variables that the service connection will be mapped to."
+        }
+    ],
+    "execution": {
+        "Node": {
+            "target": "index.js"
+        }
+    }
+}
