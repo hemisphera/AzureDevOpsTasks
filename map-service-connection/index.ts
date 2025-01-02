@@ -1,7 +1,6 @@
 import tl = require('azure-pipelines-task-lib/task');
 
-function getServiceConnection() {
-    const serviceConnectionId = tl.getInput("serviceConnection", true);
+function getServiceConnection(serviceConnectionId: string) {
     const url = tl.getEndpointUrl(serviceConnectionId, true);
     const username = tl.getEndpointAuthorizationParameter(serviceConnectionId, "username", true);
     const password = tl.getEndpointAuthorizationParameter(serviceConnectionId, "password", false);
@@ -15,13 +14,9 @@ function getServiceConnection() {
 
 async function main(): Promise<void> {
     try {
-        console.log("Hello");
-        var serviceConnection = getServiceConnection();
-
-        console.log(`Service connection: ${serviceConnection}`);
-        console.log(serviceConnection.url);
-        console.log(serviceConnection.username);
-        console.log(serviceConnection.password);
+        const serviceConnectionId = tl.getInput("serviceConnection", true)
+        console.log(`Service connection: ${serviceConnectionId}`);
+        var serviceConnection = getServiceConnection(serviceConnectionId);
 
         let prefix = tl.getInput("prefix", true);
         let map: { [index: string]: string; } = {};

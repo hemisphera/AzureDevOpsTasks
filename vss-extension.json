@@ -3,7 +3,7 @@
     "id": "hsp-azure-devops-tasks",
     "name": "Azure DevOps Tasks",
     "publisher": "hemisphera",
-    "version": "1.0.16",
+    "version": "1.0.17",
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
@@ -19,6 +19,14 @@
             "path": "map-service-connection"
         }
     ],
+    "icons": {
+        "default": "img/logo.png"
+    },
+    "content": {
+        "details": {
+            "path": "overview.md"
+        }
+    },
     "contributions": [
         {
             "id": "map-service-connection",
