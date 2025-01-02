@@ -3,7 +3,7 @@
     "id": "hsp-azure-devops-tasks",
     "name": "Azure DevOps Tasks",
     "publisher": "hemisphera",
-    "version": "1.0.17",
+    "version": "1.0.18",
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
